@@ -1,18 +1,29 @@
 package apiCrud.cadastroCliente.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import apiCrud.cadastroCliente.repository.ClienteRepository;
+import jakarta.transaction.Transactional;
+
 @RestController
-@RequestMapping("/hello")
+@RequestMapping("clientes")
 
 
 public class ClienteController {
+		
+	@Autowired
+	 ClienteRepository repository;
 	
-	@GetMapping
-	public String hello() {
-		return "hello world";
+	@PostMapping
+	@Transactional
+	public void cadastrar() {
+	}
+	
+	
+	
 	}
 		
-}
+
