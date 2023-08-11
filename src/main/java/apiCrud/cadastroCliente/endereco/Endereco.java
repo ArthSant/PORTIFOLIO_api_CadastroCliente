@@ -11,6 +11,13 @@ public class Endereco {
 		private String complemento;
 		
 		public Endereco() {}
+		
+		public Endereco(DadosEndereco dados) {
+			this.cidade = dados.cidade();
+			this.uf = dados.uf();
+			this.rua = dados.rua();
+			this.complemento = dados.complemento();
+		}
 
 		public String getCidade() {
 			return cidade;
@@ -42,6 +49,18 @@ public class Endereco {
 
 		public void setComplemento(String complemento) {
 			this.complemento = complemento;
+		}
+
+		public void atualizar(DadosEndereco dados) {
+			if(dados.cidade() != null)
+				this.cidade = dados.cidade();
+			if(dados.uf() != null)
+				this.uf = dados.uf();
+			if(dados.rua() != null)
+				this.rua = dados.rua();
+			if(dados.complemento() != null)
+				this.complemento = dados.complemento();
+			
 		}
 		
 		

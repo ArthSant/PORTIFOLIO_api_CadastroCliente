@@ -1,5 +1,6 @@
 package apiCrud.cadastroCliente.cliente;
 
+import apiCrud.cadastroCliente.controller.DadosCadastroCliente;
 import apiCrud.cadastroCliente.endereco.Endereco;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
@@ -26,6 +27,13 @@ public class Cliente {
 		
 		
 		public Cliente() {}
+		
+		public Cliente(DadosCadastroCliente dados) {
+			this.nome = dados.nome();
+			this.email = dados.email();
+			this.cpf = dados.cpf();
+			this.endereco = new Endereco(dados.endereco());
+		}
 
 		public Long getId() {
 			return id;
@@ -61,6 +69,14 @@ public class Cliente {
 
 		public void setEndereco(Endereco endereco) {
 			this.endereco = endereco;
+		}
+
+		public void atualizar(DadosAtualizarCliente dados) {
+			if(dados.email() != null)
+				this.email = dados.email();
+			if(dados.endereco() != null)
+				this.endereco.atualizar(dados.endereco());
+			
 		}
 		
 		
