@@ -1,6 +1,5 @@
 package apiCrud.cadastroCliente.cliente;
 
-import apiCrud.cadastroCliente.controller.DadosCadastroCliente;
 import apiCrud.cadastroCliente.endereco.Endereco;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;

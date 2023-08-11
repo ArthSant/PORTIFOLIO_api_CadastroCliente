@@ -17,6 +17,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import apiCrud.cadastroCliente.cliente.Cliente;
 import apiCrud.cadastroCliente.cliente.DadosAtualizarCliente;
+import apiCrud.cadastroCliente.cliente.DadosCadastroCliente;
 import apiCrud.cadastroCliente.cliente.DadosDetalhamentoCliente;
 import apiCrud.cadastroCliente.cliente.DadosListagemCliente;
 import apiCrud.cadastroCliente.repository.ClienteRepository;

@@ -1,4 +1,4 @@
-package apiCrud.cadastroCliente.controller;
+package apiCrud.cadastroCliente.cliente;
 
 import apiCrud.cadastroCliente.endereco.DadosEndereco;
 import jakarta.validation.Valid;
