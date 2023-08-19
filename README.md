@@ -8,6 +8,6 @@ http como: POST,GET,PUT e DELETE.
 # Pré-Requisito
 Para testar e utlizar a api é imporante que você tenha as seguintes ferramentas instaladas no seu computador:
 * Java 17 ou superior.
-* Um software para mandar requisições http como o Insominia e Postman
-* Uma IDE ou editor de texto para JAVA. (Aconselho o InteliJ,Eclipse ou VSCode)
-* MySQL instalado no computador
+* Um software para mandar requisições http como o Insomnia e Postman.
+* Uma IDE ou editor de texto para JAVA (Aconselho o IntelliJ,Eclipse ou VSCode).
+* MySQL.
