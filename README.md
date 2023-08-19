@@ -19,12 +19,12 @@ extraia os arquivos(caso necessário) e abra a pasta do projeto em sua IDE ou ed
 # Utilizando a API
 Com o projeto aberto em sua IDE ou editor, é de EXTREMA importância que o usuário configure o arquivo application.properties que se localiza na pasta resources, caso contrário a aplicação
 não ira funcionar.
-Após abrir o arquivo application.properties na pasta resources, digite as seguintes linhas de código:
-spring.datasource.url=jdbc:mysql://localhost:3306/INSIRA O NOME DO BANCO DE DADOS AQUI
-spring.datasource.username=INSIRA SEU NOME DE USUÁRIO NO MYSQL AQUI
-spring.datasource.password=INSIRA SUA SENHA DO MYSQL AQUI
+Após abrir o arquivo application.properties na pasta resources, digite as seguintes linhas de código: </br>
+spring.datasource.url=jdbc:mysql://localhost:3306/INSIRA O NOME DO BANCO DE DADOS AQUI </br>
+spring.datasource.username=INSIRA SEU NOME DE USUÁRIO NO MYSQL AQUI </br>
+spring.datasource.password=INSIRA SUA SENHA DO MYSQL AQUI </br>
 
-Exemplo
-spring.datasource.url=jdbc:mysql://localhost:3306/api_CadastroCliente
-spring.datasource.username=Fernando
-spring.datasource.password=123456
+Exemplo: </br>
+spring.datasource.url=jdbc:mysql://localhost:3306/api_CadastroCliente  </br>
+spring.datasource.username=Fernando  </br>
+spring.datasource.password=123456  </br>
