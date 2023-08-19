@@ -24,7 +24,7 @@ spring.datasource.url=jdbc:mysql://localhost:3306/INSIRA O NOME DO BANCO DE DADO
 spring.datasource.username=INSIRA SEU NOME DE USUÁRIO NO MYSQL AQUI
 spring.datasource.password=INSIRA SUA SENHA DO MYSQL AQUI
 
-Exemplo:
+Exemplo
 spring.datasource.url=jdbc:mysql://localhost:3306/api_CadastroCliente
 spring.datasource.username=Fernando
 spring.datasource.password=123456
