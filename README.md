@@ -17,6 +17,11 @@ Para utilizar a aplicação é bem simples, basta baixar o projeto diretamente d
 extraia os arquivos(caso necessário) e abra a pasta do projeto em sua IDE ou editor de preferência.
 
 # Utilizando a API
+
+Passo 1: </br>
+Abra o MySQL Workbench ou algum software de sua preferência para fazer a manipulaçao no banco de dados MySQL e crie um banco de dados com o nome de api_cadastroCliente. </br>
+
+Passo 2:</br>
 Com o projeto aberto em sua IDE ou editor, é de EXTREMA importância que o usuário configure o arquivo application.properties que se localiza na pasta resources, caso contrário a aplicação
 não irá funcionar.
 Após abrir o arquivo application.properties na pasta resources, digite as seguintes linhas de código: </br>
@@ -29,9 +34,7 @@ spring.datasource.url=jdbc:mysql://localhost:3306/api_CadastroCliente  </br>
 spring.datasource.username=Fernando  </br>
 spring.datasource.password=123456  </br>
 
-
-Em seguida, abra o MySQL Workbench ou algum software de sua preferência para fazer a manipulaçao no banco de dados MySQL e crie um banco de dados com o nome de api_cadastroCliente. </br>
-
+Passo 3: </br>
 Com o arquivo editado e o banco de dados criado, execute o arquivo CadastroClienteApplication.java que se encontra na pasta src/main/java no pacote apiCrudCadastroCliente. Com a aplicação em execução, abra o insomnia ou postman e teste as requisições put,get,post e delete. Lembrando que os dados precisam ser preenchidos em formatos JSON, exemplo de uma requisição POST: </br>
 
 { </br>  
