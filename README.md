@@ -30,7 +30,7 @@ spring.datasource.username=INSIRA SEU NOME DE USUÁRIO NO MYSQL AQUI </br>
 spring.datasource.password=INSIRA SUA SENHA DO MYSQL AQUI </br>
 
 Exemplo: </br>
-spring.datasource.url=jdbc:mysql://localhost:3306/api_CadastroCliente  </br>
+spring.datasource.url=jdbc:mysql://localhost:3306/api_cadastroCliente  </br>
 spring.datasource.username=Fernando  </br>
 spring.datasource.password=123456  </br>
 
