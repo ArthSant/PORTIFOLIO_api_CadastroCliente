@@ -18,7 +18,7 @@ extraia os arquivos(caso necessário) e abra a pasta do projeto em sua IDE ou ed
 
 # Utilizando a API
 Com o projeto aberto em sua IDE ou editor, é de EXTREMA importância que o usuário configure o arquivo application.properties que se localiza na pasta resources, caso contrário a aplicação
-não ira funcionar.
+não irá funcionar.
 Após abrir o arquivo application.properties na pasta resources, digite as seguintes linhas de código: </br>
 spring.datasource.url=jdbc:mysql://localhost:3306/INSIRA O NOME DO BANCO DE DADOS AQUI </br>
 spring.datasource.username=INSIRA SEU NOME DE USUÁRIO NO MYSQL AQUI </br>
@@ -28,3 +28,20 @@ Exemplo: </br>
 spring.datasource.url=jdbc:mysql://localhost:3306/api_CadastroCliente  </br>
 spring.datasource.username=Fernando  </br>
 spring.datasource.password=123456  </br>
+
+Com o arquivo editado, execute o arquivo CadastroClienteApplication.java que se encontra na pasta src/main/java no pacote apiCrudCadastroCliente. Com a aplicação em execução, abra o insomnia ou postman
+e teste as requisições put,get,post e delete. Lembrando que os dados precisam ser preenchidos em formatos JSON, exemplo de uma requisição POST: </br>
+
+{ </br>  
+  "nome":"fulano de tal",  </br>
+  "cpf":"12345678910",</br>
+  "email":"fulano@gmail.com",</br>
+  "endereco": {</br>
+     "cidade":"sao paulo",</br>
+     "uf":"sp",</br>
+     "rua":"rua tal":,</br>
+     "complemento":"complemento vem aqui"</br>
+  }</br>
+}</br>
+
+Após disparar a requesição POST com este corpo, você pode verificar o registro usando um método GET, basta mudar o tipo de requisição no insomnia ou postman. Não é necessário enviar nenhum dado no corpo do GET.
