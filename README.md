@@ -29,8 +29,10 @@ spring.datasource.url=jdbc:mysql://localhost:3306/api_CadastroCliente  </br>
 spring.datasource.username=Fernando  </br>
 spring.datasource.password=123456  </br>
 
-Com o arquivo editado, execute o arquivo CadastroClienteApplication.java que se encontra na pasta src/main/java no pacote apiCrudCadastroCliente. Com a aplicação em execução, abra o insomnia ou postman
-e teste as requisições put,get,post e delete. Lembrando que os dados precisam ser preenchidos em formatos JSON, exemplo de uma requisição POST: </br>
+
+Em seguida, abra o MySQL Workbench ou algum software de sua preferência para fazer a manipulaçao no banco de dados MySQL e crie um banco de dados com o nome de api_cadastroCliente. </br>
+
+Com o arquivo editado e o banco de dados criado, execute o arquivo CadastroClienteApplication.java que se encontra na pasta src/main/java no pacote apiCrudCadastroCliente. Com a aplicação em execução, abra o insomnia ou postman e teste as requisições put,get,post e delete. Lembrando que os dados precisam ser preenchidos em formatos JSON, exemplo de uma requisição POST: </br>
 
 { </br>  
   "nome":"fulano de tal",  </br>
