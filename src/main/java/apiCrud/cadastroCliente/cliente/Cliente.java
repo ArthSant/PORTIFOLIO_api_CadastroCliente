@@ -22,6 +22,10 @@ public class Cliente {
 		private String cpf;
 		
 		@Embedded
+		/*
+		 * O embedded é para dizer ao BD que esse campo não é uma tabela a parte, mas que pertence a tabela
+		 * cliente.
+		 */
 		private Endereco endereco;
 		
 		

@@ -34,6 +34,13 @@ public class ClienteController {
 
 	@PostMapping
 	@Transactional
+	
+	
+	/*
+	 * Estou usando os métodos com retorno ResponseEntity para retornar o código de status referente 
+	 * as requisições http.
+	 */
+	
 	public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroCliente dados, UriComponentsBuilder uriBuilder) {
 		var cliente = new Cliente(dados);
 		repository.save(cliente);
@@ -42,6 +49,11 @@ public class ClienteController {
 		return ResponseEntity.created(uri).body(new DadosDetalhamentoCliente(cliente));
 	
 	}
+	
+	
+	/*
+	 * O método get vai retornar em ordem alfabética.
+	 */
 	
 	@GetMapping
 	public ResponseEntity<Page<DadosListagemCliente>> listar(@PageableDefault(sort = {"nome"}) Pageable pagina) {
