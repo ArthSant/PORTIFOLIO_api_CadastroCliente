@@ -25,7 +25,7 @@ import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("clientes")
+@RequestMapping("clientes") //Mapeamento 
 
 public class ClienteController {
 
