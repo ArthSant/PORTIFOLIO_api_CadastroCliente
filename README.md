@@ -6,14 +6,14 @@ cadastro de clientes de uma determinada loja fictícia, onde ela recebe os dados
 http como: POST,GET,PUT e DELETE.
 
 # Pré-Requisito
-Para testar e utlizar a api é imporante que você tenha as seguintes ferramentas instaladas no seu computador:
+Para testar e utilizar a api é importante que você tenha as seguintes ferramentas instaladas no seu computador:
 * Java 17 ou superior.
 * Um software para mandar requisições http como o Insomnia e Postman.
 * Uma IDE ou editor de texto para JAVA (Aconselho o IntelliJ,Eclipse ou VSCode).
 * MySQL.
 
 # Como instalar
-Para utilizar a aplicação é bem simples, basta baixar o projeto diretamente do github ou usar um git clone para clonar todo o repositório em seu computador. Após baixar o projeto,
+Para utilizar a aplicação é bem simples, basta baixar o projeto diretamente do Github ou usar um git clone para clonar todo o repositório em seu computador. Após baixar o projeto,
 extraia os arquivos(caso necessário) e abra a pasta do projeto em sua IDE ou editor de preferência.
 
 # Utilizando a API
